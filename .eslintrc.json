@@ -1,0 +1,76 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:jsdoc/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "$SCRIPT_ROOT": "readonly",
+        "$": "readonly",
+        "jQuery": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "jsdoc"
+    ],
+    "rules": {
+        "camelcase": ["error", { "properties": "never", "ignoreDestructuring": true }],
+        "class-methods-use-this": "off",
+        "import/prefer-default-export": "off",
+        "max-classes-per-file": "off",
+        "no-alert": "off",
+        "no-console": "off",
+        "no-empty-function": "off",
+        "no-labels": "off",
+        "no-lone-blocks": "off",
+        "no-lonely-if": "off",
+        "no-multi-assign": ["error", { "ignoreNonDeclaration": true }],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "no-restricted-globals": ["error", "isNaN", "isFinite"],
+        "no-restricted-syntax": "off",
+        "no-unused-vars": ["error", { "args": "none" }],
+        "no-useless-constructor": "off",
+        "object-shorthand": ["error", "consistent-as-needed"],
+        "prefer-destructuring": "off",
+        "yoda": ["error", "never", { "exceptRange": true }],
+
+        "function-call-argument-newline": "off",
+        "function-paren-newline": "off",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+        "no-trailing-spaces": ["error", { "ignoreComments": true }],
+        "object-curly-newline": ["error", {
+            "ObjectPattern": { "multiline": true }
+        }],
+        "padded-blocks": ["error", { "blocks": "never", "switches": "never" }],
+
+        "jsdoc/no-undefined-types": ["error", {
+            "definedTypes": [
+                "Readonly",
+                "Record",
+                "Iterable",
+                "IterableIterator",
+                "ReadonlyArray",
+                "ReadonlyMap",
+                "ReadonlySet",
+                "Pick",
+                "PromiseLike",
+                "NodeJS",
+                "NonNullable",
+                "JQuery"
+            ]
+        }]
+    },
+    "settings": {
+        "jsdoc": {
+            "mode": "typescript"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "module": "commonjs",
+        "target": "esnext",
+        "jsx": "preserve",
+        "strict": true,
+        "strictPropertyInitialization": false
+    },
+}
