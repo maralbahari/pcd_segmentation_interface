@@ -40,6 +40,13 @@ export class PointBuffer {
     #data;
 
     /**
+     * The data inside this buffer, originating from the project.
+     * 
+     * @type {Float32Array}
+     */
+    get data() { return this.#data; }
+
+    /**
      * The mapping between the coordinate system of the project and that of `three.js`.
      * 
      * @readonly

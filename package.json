@@ -29,6 +29,8 @@
         "mini-css-extract-plugin": "^2.4.3",
         "mini-svg-data-uri": "^1.4.4",
         "nebula.gl": "^1.0.4",
+        "onnxruntime-node": "^1.17.0",
+        "onnxruntime-web": "^1.17.1",
         "portfinder-sync": "0.0.2",
         "raw-loader": "^4.0.2",
         "three": "^0.134.0",

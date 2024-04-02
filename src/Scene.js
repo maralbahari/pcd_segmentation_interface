@@ -7,6 +7,7 @@ import { Brush, RectangleBox, Polygon, Curvature, DrawingTool } from './selectio
 import { EditSelection, LabelSelection, LabelClassSelector, SelectionInspector, LabelClass } from './selection';
 import { Picker } from './picker';
 
+
 /**
  * @typedef {import('./selectionTools/Brush').Circle} Circle
  */
